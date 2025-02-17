@@ -72,7 +72,10 @@ function App() {
 
       context.clearRect(0, 0, videoWidth, videoHeight);
       faceapi.draw.drawDetections(canvas, resizedDetections);
-      faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+
+      // Commented the code for removing the face landmarks
+      // faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+
       faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
     };
 
